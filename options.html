@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block List Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    textarea { width: 350px; height: 100px; margin-bottom: 10px; }
+    button { padding: 10px 20px; }
+    h3{color:red;}
+  </style>
+</head>
+<body>
+  <h3>Youtube Blocked Keywords and Channels</h3>
+  <h2>Blocked Keywords</h2>
+  <textarea id="keywords" placeholder="One per line"></textarea>
+
+  <h2>Blocked Channels</h2>
+  <textarea id="channels" placeholder="One per line"></textarea>
+
+  <button id="save">Save</button>
+  <span id="status" style="margin-left: 10px; color: green;"></span>
+
+  <script src="options.js"></script>
+</body>
+</html>

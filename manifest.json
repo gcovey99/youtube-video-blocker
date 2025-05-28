@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Blocker",
+  "version": "1.0",
+  "description": "Blocks YouTube videos with certain keywords or from specific channels.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "options.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
