@@ -5,9 +5,15 @@
   "description": "Blocks YouTube videos with certain keywords or from specific channels.",
   "permissions": ["storage"],
   "action": {
-    "default_popup": "options.html"
+    "default_popup": "options.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
   },
   "options_page": "options.html",
+  "icons": {
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
